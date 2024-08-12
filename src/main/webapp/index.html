@@ -5,7 +5,27 @@
     <title>SpringApp</title>
 </head>
 <body>
- <h1>Welcome</h1>
- <h3>All about java MVC</h3>
+ <h1>Welcome Here</h1>
+ <h2>Search for a trainee </h2>
+ <form action="find-trainee" method="get">
+     <p>Enter the id : <input type="number" name="id"></p>
+     <p><button type="submit">Find</button><p>
+ </form>
+ <div>
+     <h3>Please input your details </h3>
+     <form action="add-trainee" method="post">
+         <p>ID : <input type="number" name="id"></p>
+         <p>Name : <input type="text" name="name"></p>
+         <p>Location : <input type="text" name="location"></p>
+         <p><button type="submit"> Enter </button></p>
+     </form>
+ </div>
+ <h2>Remove a trainee </h2>
+ <form action="remove-trainee" method="get">
+     <p>Enter the id : <input type="number" name="id"></p>
+     <p><button type="submit">delete</button><p>
+ </form>
+
+
 </body>
 </html>
